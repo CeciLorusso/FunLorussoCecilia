@@ -24,14 +24,7 @@ body {
     background-size: cover;
     padding: 0px;
 }
-.navegador {
-    background-color: #2b4448!important;
-}
-.blanco{
-    color: white!important;
 
-}
-  
 /*----------------------HEADER-----------------------*/
 .logoportada {
     max-width: 100%;
@@ -103,6 +96,14 @@ body {
     display: none;
 } 
 
+.navegador {
+    background-color: #2b4448!important;
+}
+.blanco{
+    color: white!important;
+
+}
+  
 /* 
 .buscar {
     height: 30px;
@@ -132,7 +133,14 @@ h1 {
     animation-delay: 2s;
 
 }
-
+.linkpdf{
+    
+    display: flex;
+    text-align: center;
+    position:relative;
+    text-align: center;
+    margin: 20px;
+}
 @keyframes ampliar {
     0% {
         width: 100%;
@@ -240,19 +248,6 @@ footer {
 
 }
 
-/* .grilla {
-    height: 100%;
-    padding: 1rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
-    justify-self: center;
-
-} */
-
 @media screen and (min-width:768px) {
 
     .grilla {
@@ -320,6 +315,7 @@ footer {
 .nosotros {
     margin: 20px;
     padding: 10px;
+    
 }
 
 /*-------------------------TALLER---------------------------*/
@@ -330,9 +326,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-
 }
 
 /*-------------------------TALLER---------------------------*/
