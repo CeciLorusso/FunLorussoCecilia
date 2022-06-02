@@ -1,0 +1,28 @@
+.footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0px;
+    padding: 10px 0px
+}
+
+footer {
+    height: auto;
+    background-color: #2b4448;
+    padding: 5px;
+}
+
+.pie li {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.pie li:hover {
+    background: #667e81;
+    border: solid black;
+
+}

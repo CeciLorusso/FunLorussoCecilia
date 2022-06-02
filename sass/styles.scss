@@ -1,0 +1,142 @@
+@import "nav";
+@import "footer";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: auto;
+    background-color: #2b4448;
+    padding: 0px;
+    text-align: center;
+
+}
+
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    background-size: cover;
+    padding: 0px;
+    h1,h2,h3,p,ul
+{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+
+    h1 {
+        padding-top: 50px;
+        font-size: 2em;
+        color: #2b4448!important;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        color: #2b4448!important;
+        padding: 50px 0px
+    }
+
+    h3 {
+        font-size: 1.2em;
+        padding: 50px 0px
+    }
+}
+}
+
+.blanco {
+    color: white !important;
+
+}
+
+.logo {
+    display: flex;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.animado {
+    font-size: 1em;
+    color: white;
+    position: static;
+    background-color: #667e81;
+    animation-name: ampliar;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 2s;
+
+}
+
+@keyframes ampliar {
+    0% {
+        width: 100%;
+        background-color: #2b4448;
+    }
+
+    25% {
+        width: 85%;
+        background-color: #5f7d81;
+    }
+
+    50% {
+        width: 50%;
+        background-color: #6b7d80;
+    }
+
+    75% {
+        width: 85%;
+        background-color: #5f7d81;
+    }
+
+    100% {
+        width: 100%;
+        background-color: #2b4448;
+    }
+}
+
+
+.verde {
+    color: white !important;
+    
+}
+img {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.imagenesproductos {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    align-items: center;
+}
+.tipsimg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    align-items: center;
+}
+.medallones img {
+    border-radius: 10px;
+}
+.tarta img {
+    border-radius: 10px;
+}
+.viandas img {
+    border-radius: 10px;
+}
+.cremoso img {
+    border-radius: 5px;
+}
+.fideos img {
+    border-radius: 5px;
+}
+
+
