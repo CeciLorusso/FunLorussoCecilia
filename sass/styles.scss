@@ -1,6 +1,10 @@
+@import "variables";
+@import "breakpoints";
+@import "mixins";
 @import "nav";
 @import "footer";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
+
 
 * {
     margin: 0;
@@ -17,40 +21,46 @@ header {
 }
 
 body {
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
+    background-color: $colorBlanco;
+    font-family: $font, sans-serif;
     font-size: large;
     background-size: cover;
     padding: 0px;
-    h1,h2,h3,p,ul
-{
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    justify-content: center;
+    margin: 0;
+    color: color(primary);
 
-    h1 {
-        padding-top: 50px;
-        font-size: 2em;
-        color: #2b4448!important;
-    }
+    h1,
+    h2,
+    h3,
+    p,
+    ul {
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        justify-content: center;
 
-    h2 {
-        font-size: 1.5em;
-        color: #2b4448!important;
-        padding: 50px 0px
-    }
+        h1 {
+            padding-top: 50px;
+            /* font-size: 2em; */
+            color: $colorPrincipal  !important;
+        }
 
-    h3 {
-        font-size: 1.2em;
-        padding: 50px 0px
+        h2 {
+            /* font-size: 1.5em; */
+            color: $colorPrincipal  !important;
+            padding: 50px 0px
+        }
+
+        h3 {
+            /*     font-size: 1.2em; */
+            padding: 50px 0px
+        }
     }
-}
 }
 
 .blanco {
-    color: white !important;
+    color: $colorBlanco  !important;
 
 }
 
@@ -63,7 +73,7 @@ body {
 
 .animado {
     font-size: 1em;
-    color: white;
+    color: $colorBlanco;
     position: static;
     background-color: #667e81;
     animation-name: ampliar;
@@ -72,71 +82,125 @@ body {
     animation-duration: 5s;
     animation-delay: 2s;
 
+    @keyframes ampliar {
+        0% {
+            width: 100%;
+            background-color: $colorPrincipal;
+        }
+
+        25% {
+            width: 85%;
+            background-color: $colorSecundario;
+        }
+
+        50% {
+            width: 50%;
+            background-color: $colorSecundario;
+        }
+
+        75% {
+            width: 85%;
+            background-color: $colorSecundario;
+        }
+
+        100% {
+            width: 100%;
+            background-color: $colorPrincipal;
+        }
+    }
 }
 
-@keyframes ampliar {
-    0% {
-        width: 100%;
-        background-color: #2b4448;
-    }
 
-    25% {
-        width: 85%;
-        background-color: #5f7d81;
-    }
-
-    50% {
-        width: 50%;
-        background-color: #6b7d80;
-    }
-
-    75% {
-        width: 85%;
-        background-color: #5f7d81;
-    }
-
-    100% {
-        width: 100%;
-        background-color: #2b4448;
-    }
-}
 
 
 .verde {
-    color: white !important;
-    
+    color: $colorBlanco  !important;
+
 }
-img {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
+
+.container {
+    img {
+        max-width: 100%;
+        @include flex;
+
+    }
+
+    .imagenesproductos {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 200px;
+        align-items: center;
+    }
+
+
+    .medallones img {
+        border-radius: 10px;
+    }
+
+    .tarta img {
+        border-radius: 10px;
+    }
+
+    .viandas img {
+        border-radius: 10px;
+    }
+
+    .cremoso img {
+        border-radius: 5px;
+    }
+
+    .fideos img {
+        border-radius: 5px;
+    }
+
 }
-.imagenesproductos {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 200px;
-    align-items: center;
-}
+
 .tipsimg {
     margin-left: auto;
     margin-right: auto;
     width: 25%;
     align-items: center;
-}
-.medallones img {
-    border-radius: 10px;
-}
-.tarta img {
-    border-radius: 10px;
-}
-.viandas img {
-    border-radius: 10px;
-}
-.cremoso img {
-    border-radius: 5px;
-}
-.fideos img {
-    border-radius: 5px;
+
 }
 
+.listaprecios {
+    @include flex;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 
+
+}
+
+.taller {
+    @include flex;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+$theme: dark;
+
+.tipuno {
+    margin: 10px;
+    padding: 5px;
+
+    @if $theme==dark {
+        background-color: $colorResaltardo;
+        color: $colorTexto
+    }
+
+    @else if $theme==light {
+        color: $colorTexto;
+    }
+
+    @else {
+        color: $colorResaltardo;
+        color: $colorTexto
+    }
+}
+.nosotros{
+    margin: 20px;
+    padding: 20px;
+}

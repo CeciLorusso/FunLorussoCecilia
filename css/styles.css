@@ -1,26 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap");
+.facebook-icon {
+  background-image: url("/img/facebook.png"); }
+
+.instagram-icon {
+  background-image: url("/img/instagram.png"); }
+
+.mail-icon {
+  background-image: url("/img/mail.png"); }
+
+.whatsapp-icon {
+  background-image: url("/img/whatsapp.png"); }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--instagram {
+  background-color: #990088; }
+
+.btn--mail {
+  background-color: red; }
+
+.btn--whatsapp {
+  background-color: green; }
+
+h1 {
+  font-size: 2em; }
+
+.boton, .boton .boton--enviar, .boton .boton--limpiar {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  display: inline; }
+  .boton .boton--enviar {
+    background-color: #879ea1;
+    color: grey; }
+  .boton .boton--limpiar {
+    background-color: #879ea1;
+    color: grey;
+    width: 180px; }
+
 .navegador {
   background-color: #2b4448 !important; }
-
-.footer {
-  color: white;
-  text-align: center;
-  margin: 0px;
-  padding: 10px 0px; }
 
 footer {
   height: auto;
   background-color: #2b4448;
   padding: 5px; }
-
-.pie li {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
-  margin-top: 10px; }
+  footer .footer {
+    color: white;
+    text-align: center !important;
+    margin: 0px;
+    padding: 10px 0px; }
+  footer li {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px; }
 
 .pie li:hover {
   background: #667e81;
@@ -39,26 +79,44 @@ header {
 
 body {
   background-color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Monserrat", sans-serif;
   font-size: large;
   background-size: cover;
-  padding: 0px; }
-  body h1, body h2, body h3, body p, body ul {
+  padding: 0px;
+  margin: 0;
+  color: color(primary); }
+  body h1,
+  body h2,
+  body h3,
+  body p,
+  body ul {
     padding: 5px;
     margin: 5px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     justify-content: center; }
-    body h1 h1, body h2 h1, body h3 h1, body p h1, body ul h1 {
+    body h1 h1,
+    body h2 h1,
+    body h3 h1,
+    body p h1,
+    body ul h1 {
       padding-top: 50px;
-      font-size: 2em;
+      /* font-size: 2em; */
       color: #2b4448 !important; }
-    body h1 h2, body h2 h2, body h3 h2, body p h2, body ul h2 {
-      font-size: 1.5em;
+    body h1 h2,
+    body h2 h2,
+    body h3 h2,
+    body p h2,
+    body ul h2 {
+      /* font-size: 1.5em; */
       color: #2b4448 !important;
       padding: 50px 0px; }
-    body h1 h3, body h2 h3, body h3 h3, body p h3, body ul h3 {
-      font-size: 1.2em;
+    body h1 h3,
+    body h2 h3,
+    body h3 h3,
+    body p h3,
+    body ul h3 {
+      /*     font-size: 1.2em; */
       padding: 50px 0px; }
 
 .blanco {
@@ -90,7 +148,7 @@ body {
     background-color: #5f7d81; }
   50% {
     width: 50%;
-    background-color: #6b7d80; }
+    background-color: #5f7d81; }
   75% {
     width: 85%;
     background-color: #5f7d81; }
@@ -101,16 +159,32 @@ body {
 .verde {
   color: white !important; }
 
-img {
+.container img {
   max-width: 100%;
   display: flex;
+  align-items: center;
   justify-content: center; }
 
-.imagenesproductos {
+.container .imagenesproductos {
   margin-left: auto;
   margin-right: auto;
   max-width: 200px;
   align-items: center; }
+
+.container .medallones img {
+  border-radius: 10px; }
+
+.container .tarta img {
+  border-radius: 10px; }
+
+.container .viandas img {
+  border-radius: 10px; }
+
+.container .cremoso img {
+  border-radius: 5px; }
+
+.container .fideos img {
+  border-radius: 5px; }
 
 .tipsimg {
   margin-left: auto;
@@ -118,17 +192,28 @@ img {
   width: 25%;
   align-items: center; }
 
-.medallones img {
-  border-radius: 10px; }
+.listaprecios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
 
-.tarta img {
-  border-radius: 10px; }
+.taller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto; }
 
-.viandas img {
-  border-radius: 10px; }
+.tipuno {
+  margin: 10px;
+  padding: 5px;
+  background-color: #879ea1;
+  color: black; }
 
-.cremoso img {
-  border-radius: 5px; }
-
-.fideos img {
-  border-radius: 5px; }
+.nosotros {
+  margin: 20px;
+  padding: 20px; }

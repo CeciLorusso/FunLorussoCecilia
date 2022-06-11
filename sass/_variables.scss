@@ -1,0 +1,67 @@
+$colorBlanco: white;
+$colorTexto: black;
+$colorPrincipal: #2b4448;
+$colorSecundario: #5f7d81;
+$colorResaltardo: #879ea1;
+
+@each $red in facebook,
+instagram,
+mail,
+whatsapp {
+    .#{$red}-icon {
+        background-image: url("/img/#{$red}.png");
+    }
+}
+
+//mapa de colores de redes
+$coloresRedes: (
+    facebook:#3a5795,
+    instagram:#990088,
+    mail:red,
+    whatsapp: green
+);
+
+@each $red,
+$color in $coloresRedes {
+    .btn--#{$red} {
+        background-color: $color;
+    }
+}
+
+$font-title: "Monserrat Alternates", sans-serif;
+$font: "Monserrat";
+
+$headings: (
+    h1: 2em,
+    h2: 1.5em,
+    h3: 1em
+);
+
+$h1: map-get($headings, h1);
+
+h1 {
+    font-size: $h1;
+}
+
+.boton {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    display: inline;
+
+    .boton--enviar {
+        @extend .boton;
+        background-color: $colorResaltardo;
+        color: grey;
+    }
+
+    .boton--limpiar {
+        @extend .boton;
+        background-color: $colorResaltardo;
+        color: grey;
+        width: 180px;
+    }
+
+}
