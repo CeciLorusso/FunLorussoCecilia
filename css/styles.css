@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap");
 .facebook-icon {
   background-image: url("/img/facebook.png"); }
@@ -11,6 +12,7 @@
 .whatsapp-icon {
   background-image: url("/img/whatsapp.png"); }
 
+/*mapa de colores de redes*/
 .btn--facebook {
   background-color: #3a5795; }
 
@@ -23,9 +25,11 @@
 .btn--whatsapp {
   background-color: green; }
 
+/* Fuente*/
 h1 {
   font-size: 2em; }
 
+/*formulario*/
 .boton, .boton .boton--enviar, .boton .boton--limpiar {
   width: 100px;
   height: 30px;
@@ -119,15 +123,18 @@ body {
       /*     font-size: 1.2em; */
       padding: 50px 0px; }
 
+/*texto nav*/
 .blanco {
   color: white !important; }
 
+/*logo nav*/
 .logo {
   display: flex;
   padding: 20px;
   width: 100px;
   height: 100px; }
 
+/*animación debajo del nav*/
 .animado {
   font-size: 1em;
   color: white;
@@ -156,9 +163,7 @@ body {
     width: 100%;
     background-color: #2b4448; } }
 
-.verde {
-  color: white !important; }
-
+/*productos*/
 .container img {
   max-width: 100%;
   display: flex;
@@ -186,12 +191,23 @@ body {
 .container .fideos img {
   border-radius: 5px; }
 
+/*tips*/
+.verde {
+  color: white !important; }
+
 .tipsimg {
   margin-left: auto;
   margin-right: auto;
   width: 25%;
   align-items: center; }
 
+.tipuno {
+  margin: 10px;
+  padding: 5px;
+  background-color: #879ea1;
+  color: black; }
+
+/*productos*/
 .listaprecios {
   display: flex;
   align-items: center;
@@ -200,6 +216,7 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+/*talleres*/
 .taller {
   display: flex;
   align-items: center;
@@ -208,12 +225,7 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-.tipuno {
-  margin: 10px;
-  padding: 5px;
-  background-color: #879ea1;
-  color: black; }
-
+/*Nosotros*/
 .nosotros {
   margin: 20px;
   padding: 20px; }

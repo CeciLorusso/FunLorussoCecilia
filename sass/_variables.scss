@@ -13,7 +13,7 @@ whatsapp {
     }
 }
 
-//mapa de colores de redes
+/*mapa de colores de redes*/
 $coloresRedes: (
     facebook:#3a5795,
     instagram:#990088,
@@ -28,6 +28,7 @@ $color in $coloresRedes {
     }
 }
 
+/* Fuente*/
 $font-title: "Monserrat Alternates", sans-serif;
 $font: "Monserrat";
 
@@ -43,6 +44,7 @@ h1 {
     font-size: $h1;
 }
 
+/*formulario*/
 .boton {
     width: 100px;
     height: 30px;
