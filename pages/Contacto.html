@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <meta name="description" content="Contactanos para acceder a nuestros productos y talleres para una Alimentate saludable.">
+    <!--Description & keywords-->
+    <meta name="description"
+        content="Contactanos para acceder a nuestros productos y talleres para una Alimentate saludable.">
     <meta name="Keywords" content="HTML, TIPS, VIANDAS, ALIMENTACION, SALUDABLE">
-    <title>FüN By Euge Lorusso</title>
+    <!--Título solapa-->
+    <title>Fün by Euge Lorusso | Contacto</title>
+    <!--Link css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../fonts/Montserrat/static/">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
     <header>
+        <!--Barra Navegación-->
         <nav class="navegador navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <img class="logo" src="../img/logofun001.svg">
@@ -41,14 +46,16 @@
                         <li class="nav-item">
                             <a class="nav-link active blanco" aria-current="page" href="./Contacto.html">CONTACTOS</a>
                         </li>
+
                     </ul>
                 </div>
             </div>
         </nav>
 
     </header>
+    <!--Animación-->
     <div class="animado">
-        <p>Alimentate de una manera consciente</p>
+        <p>Aliméntate de una manera consciente</p>
     </div>
     <form action="" method="" aria-expanded="">
         <div class="miCuenta">
@@ -60,49 +67,57 @@
             <input type="password" id="pass">
             <div class="boton enviar limpiar">
                 <input class="boton--enviar" type="submit" value="Enviar">
-                <input class="boton--limpiar"
-                type="reset" value="Limpiar formulario">
+                <input class="boton--limpiar" type="reset" value="Limpiar formulario">
             </div>
         </div>
 
-        <h1>CONTACTO</h1>
-        <div class="mapa">
+        <h1 class="resaltados">CONTACTO</h1>
+        <div>
             <iframe src="" frameborder="0"></iframe>
-            <iframe
+            <iframe  class="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.776533772022!2d-58.69810653286468!3d-34.56486977423988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbdb4280dda5b%3A0x8b1a5daf135cb663!2sQuirno%20%26%20Arroyo%2C%20Bella%20Vista%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1651958695450!5m2!1ses!2sar"
                 width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <ul class="h3">
+        <ul class="h4">
             <li>Dirección: Quirno 2173</li>
             <li>-entre Arroyo y Munzón-</li>
             <li>-Bella Vista-</li>
-            <li>Email:funbyeugelorusso@email.com</li>
-            <li>Whatsapp: 1165189575</li>
+            <li>Email:</li>
+            <li>funbyeugelorusso@email.com</li>
+            <li>WhatsApp: 1165189575</li>
         </ul>
-
+        <!--Barra Footer-->
         <footer>
 
-            <h2 class="footer">SIGAMOS CONECTADOS</h2>
+            <p class="conectados footer">SIGAMOS CONECTADOS</p>
             <div class="redes">
                 <ul class="pie">
                     <li>
-                        <a class="mail" href="mailto:eugelorusso@gmail.com" target="_blank">eugelorusso@gmail.com</a>
+                        <a class="mail" href="mailto:eugelorusso@gmail.com" target="_blank"><img class="icono"
+                                src="../img/mail.svg" alt="Email"></a>
                     </li>
-                    <li><a class="facebook" href="https://www.facebook.com/funbyeugelorusso"
-                            target="_blank">Facebook</a>
+                    <li>
+                        <a class="facebook" href="https://www.facebook.com/funbyeugelorusso" target="_blank"><img
+                                class="icono" src="../img/facebook.svg" alt="Facebook"></a>
                     </li>
-                    <li><a class="instagram" href="https://www.instagram.com/fun_by_eugelorusso/"
-                            target="_blank">Instagram</a>
+                    <li>
+                        <a class="instagram" href="https://www.instagram.com/fun_by_eugelorusso/" target="_blank"><img
+                                class="icono" src="../img/instagram.svg" alt="Instagram"></a>
                     </li>
-                    <li class="whatsapp">1565189575
+                    <li class="whatsapp">
+                        <a href="https://api.whatsapp.com/send?phone=1165189575" target="_blank"><img class="icono"
+                                src="../img/wapp.svg" alt="whatsapp"></a>
                     </li>
-                    <li>Dirección: Quirno 2173 - entre Arroyo y Munzón - Bella Vista</li>
+                    <li>
+                        <img src="../img/direccion.svg" alt="Dirección">
+                        <p> Dirección: Quirno 2173 - entre Arroyo y Munzón - Bella Vista</p>
+                    </li>
                 </ul>
-
 
             </div>
         </footer>
+        <!--Link Js-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
             </script>

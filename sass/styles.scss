@@ -72,6 +72,8 @@ body {
 
 /*animación debajo del nav*/
 .animado {
+    @include flex;
+    height: 60px;
     font-size: 1em;
     color: $colorBlanco;
     position: static;
@@ -109,7 +111,11 @@ body {
         }
     }
 }
-
+/*Imagen principal inicio*/
+.principal{
+    width: 100%;
+    height: 80%;
+}
 /*productos*/
 .container {
     img {
@@ -124,25 +130,16 @@ body {
         align-items: center;
     }
 
-    .medallones img {
-        border-radius: 10px;
-    }
-
-    .tarta img {
-        border-radius: 10px;
-    }
-
-    .viandas img {
-        border-radius: 10px;
-    }
-
-    .cremoso img {
+    .radius img {
+        height: 200px;
+        width: 200px;
+        @include flex;
         border-radius: 5px;
     }
-
-    .fideos img {
-        border-radius: 5px;
-    }
+}
+.resaltados{
+    background-color:$colorResaltardo;
+    
 }
 
 /*tips*/
@@ -193,9 +190,25 @@ $theme: dark;
     margin-left: auto;
     margin-right: auto;
 }
-
+.fondo{
+    background-color: #f7c6b5;
+    margin: 10px;
+    padding: 5px;
+}
+.resaltadosnaranja{
+    background-color:#faaa8f;
+    
+}
 /*Nosotros*/
 .nosotros {
     margin: 20px;
     padding: 20px;
 }
+.mapa{
+    @include flex;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    align-items: center;
+    }
